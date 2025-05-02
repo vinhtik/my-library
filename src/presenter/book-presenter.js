@@ -54,7 +54,7 @@ export class BookPresenter {
       const deleteButtonComponent = new DeleteButtonComponent({
         onClick: () => this.#handleDeleteBook(book.id)
       });
-      render(deleteButtonComponent, bookItemComponent.actionsContainer);
+      render(deleteButtonComponent, bookItemComponent.element);
 
       this.#bookItemComponents.push({
         bookItem: bookItemComponent,

@@ -22,7 +22,4 @@ export class BookItemComponent extends AbstractComponent {
     return createBookItemTemplate(this.#book);
   }
 
-  get actionsContainer() {
-    return this.element.querySelector('[data-actions]');
-  }
 }
